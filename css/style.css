@@ -1,0 +1,159 @@
+/* 
+Title:		
+Author: 	@everdoia
+*/
+
+/***** Reset! Modified From: http://developer.yahoo.com/yui/reset *****/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img { border: 0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style: normal; font-weight: normal; }
+ol,ul { list-style: none; }
+caption,th { text-align: left; }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal; }
+q:before,q:after { content: ''; }
+abbr,acronym { border: 0; }
+a { outline: none; text-decoration: none; }
+a img { border: none; }
+.clear { clear: both; font-size: 1px; line-height: 1px; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.texthide { text-indent: -9999em; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display:block;
+}
+
+body {
+	background-color: #fff;
+}
+
+#wrap {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+/***** HEADER & NAVIGATION *****/
+
+
+#primary {
+	width: 100%;
+	height: 20px;
+	background-color: #000;
+	margin-top: 0px;
+	margin-bottom: 7px;
+	padding-top: 7px;
+	-webkit-box-shadow: 0px 0px 0px #ccc;
+	-moz-box-shadow: 0px 0px 0px #ccc;
+	box-shadow: 0px 0px 0px #ccc;
+	font: bold 12px "Tahoma";
+	letter-spacing: 1px;
+}
+
+#primary ul li {
+	display: inline;
+	padding-left: 8px;
+}
+
+#primary li a {
+	padding: 5px 0px;
+	color: gray;
+	text-shadow: 0px 0px 0px #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+#primary li a:hover {
+	color: #fff;
+	
+}
+
+/***** PROMOTIONAL SECTION *****/
+
+#promotional {
+	float: left;
+}
+
+#promotional img {
+	float: center;
+	
+}
+
+#promotional a.menu {
+	width: 120px;
+	height: 20px;
+	padding: 10px 0 0 0;
+	text-align: center;
+	float: left;
+	background: #d0d0c6;
+	background: rgba(208, 208, 198, .5);
+	font: normal 10px "Tahoma"; font-weight: "bold";
+	letter-spacing: 1px;
+	border: 1px solid #d4d4cd;
+	
+}
+
+#promotional a.menu span {
+	font: normal 24px "Arial, Sans-Serif";
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+
+#promotional .menu:last-child {
+	float: right;
+	margin-right: 25px;
+}
+
+
+/***** FOOTER *****/
+
+#primary-foot {
+	width: 100%;
+	float: right;
+	margin-top: 10px;
+	padding: 0px;
+	background-color: #fff;
+	border: 1px solid #d2d2c4;
+	position: absolute;bottom: 0;
+}
+
+
+#info {
+	float: right;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#info a:hover {
+	text-decoration: underline;
+}
+
+#info ul li {
+	display: inline;
+	border-right: 1px solid #9f9f8f;
+	padding: 0 10px 0 15px;
+	font: 13px "Arial, Sans-Serif";
+	text-align: right;
+}
+
+
+#stuff {
+	text-align: center;
+	padding: 175px;
+}
+
+#footer-nav {
+	float: right;
+	position: right ;bottom: 0;
+}
+
+body {
+	background: url(../images/seamlesstexture1_1200.jpg) repeat;
+}
+
+

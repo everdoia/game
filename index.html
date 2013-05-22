@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Guess That Number!</title>
+<link href="css/style.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]-->
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+
+	
+
+<!-- BEGIN SEARCH SECTION -->
+	<div id="stuff">
+
+
+<img src="images/google.png"   width="260" height="260">
+<br />
+<br>
+<p style="font-size = 10px; font-family: Tahoma" > Can you guess the Number I'm thinking between 1-100? How many guesses will it take you?</p>
+<br>
+<form id="myform">
+   <input type="text" name="myanswer">
+</form>
+<br>
+
+function attempt()
+    {
+        if(guess == number)
+        {
+            alert("You got it!");
+        }
+
+        if(guess > number)
+        {
+            guess = prompt("Try guessing lower.", "");
+            attempt();
+        }
+
+        if(guess < number)
+        {
+            guess = prompt("Try guessing higher.", "");
+            attempt();
+        }
+
+    }
+
+    var number = Math.floor(Math.random()*101)
+    var guess = prompt("Welcome to the numbers game! Try guessing a number between 1 and 100!", "");
+    attempt();
+
+</script>
+
+<!-- END SEARCH SECTION -->
+
+<!-- BEGIN FOOTER -->	
+	<footer id="primary-foot">
+	
+	</footer>
+<!-- END FOOTER -->	
+
+</div>
+
+</body>
+
+</html>
