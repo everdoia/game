@@ -50,6 +50,16 @@ jQuery(function($) {
     $('#message').show();
   })
   
+  function questionDisplay() {                           //displays the current question
+    $('#questionNum').text("Question " + (questionNum+1) + " of " + questionTotal);
+    $('#question').text(questions[questionNum].question);
+    $('#choices').empty();
+    var choiceTotal = questions[questionNum].choices.length;
+    for (var i=0; i<choiceTotal; i++) {                  //displays the answer choices
+      $('#choices').append("<input type='radio' class='guess' name='guess' value=" + i + ">" + questions[questionNum].choices[i] + "<br>");
+    }
+  }
+  
   $('#message').on('click', '#continue', function(){
     if ((questionNum+1) == questionTotal) {              //quiz is finished, show stats
       $('#message').html("You have answered " + correctTotal + " questions correctly out of " + questionTotal + " total questions.<br>Click on Start Quiz above to take the quiz again.");
@@ -65,14 +75,6 @@ jQuery(function($) {
   })
 
 
-  function questionDisplay() {                           //displays the current question
-    $('#questionNum').text("Question " + (questionNum+1) + " of " + questionTotal);
-    $('#question').text(questions[questionNum].question);
-    $('#choices').empty();
-    var choiceTotal = questions[questionNum].choices.length;
-    for (var i=0; i<choiceTotal; i++) {                  //displays the answer choices
-      $('#choices').append("<input type='radio' class='guess' name='guess' value=" + i + ">" + questions[questionNum].choices[i] + "<br>");
-    }
-  }
+  
 
 }); 
